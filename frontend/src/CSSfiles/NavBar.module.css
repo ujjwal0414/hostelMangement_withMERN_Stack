@@ -1,0 +1,109 @@
+.NAVbarDiv{
+    display: flex;
+   border-bottom: 2px solid black;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+}
+.threeBar{
+    display: none;
+} 
+.logo{
+    width: 45vw;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+.noUserSignPage{
+    display: flex;
+     width: 50vw;
+     justify-content: flex-end;
+    align-items: center;
+}
+.noUserSignPageOnwindow{
+    display: flex;
+    width: 50vw;
+    justify-content: flex-end;
+   align-items: center;
+}
+/* .noUserSignPageOnwindow div{
+    
+}
+.noUserSignPage div{
+    border: 2px solid green;
+
+} */
+.noUserSignPageOnwindow div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.noUserSignPage div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.signupDiv{
+    margin-right: 2vw;
+}
+.jex{
+    color: rgb(0, 157, 201);
+}
+.logoutbtn{
+    outline: none;
+    border: none;
+    color: black;
+    color: black;
+    font-weight: 800;
+    
+}
+@media (max-width:450px){
+    .NAVbarDiv{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        position: relative;
+    }
+    .logo{
+        font-weight: 700;
+        font-size: 5vw;
+        margin-left: 4vw;
+    }
+    .threeBar{
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 7vw;
+        position: absolute;
+        right: 4vw;
+        top: 1.8vw;
+       
+        display: block;
+    }
+    .noUserSignPage{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 2px solid rgb(255, 255, 255);
+        width: 70vw;
+        position: absolute;
+        right: 0px;
+        top: 15vw;
+        z-index: 20;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        border: 1px solid black;
+        
+    }
+    .noUserSignPage div{
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        padding: 0.3vw 6vw;
+        
+    }
+    .signupDiv{
+        margin-top: 2vw;
+        margin-top: 2vw;
+    }
+    .noUserSignPageOnwindow{
+        display: none;
+    }
+}
