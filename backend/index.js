@@ -12,7 +12,7 @@ const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
 app.use(cor(
     origin: 'https://hostel-mangement-with-mern-stack.vercel.app/', 
-  methods: ["GET","POST"], 
+  methods:'GET,POST', 
   credentials: true, 
 ));
 app.get("/",(req,resp)=>{
