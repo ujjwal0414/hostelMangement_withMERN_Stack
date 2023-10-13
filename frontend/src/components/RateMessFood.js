@@ -82,7 +82,7 @@ const RateFood=()=>{
     else{
         setMessNosStatus(false);
         setFeedBackStatus(true);
-        response=await fetch(`${localConnection}/rateMess`,{
+        response=await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/rateMess`,{
             method:"post",
             body:JSON.stringify({
                 student_name:userName,
