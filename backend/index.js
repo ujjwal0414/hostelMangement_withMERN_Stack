@@ -10,23 +10,13 @@ let subj="<h3>Dear User</h3><br><h3>Being a responsible student you have the res
 const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
-
-const allowedOrigin = 'https://hostel-mangement-with-mern-stack-frontend.vercel.app';
-
-
-const allowedMethods = 'GET,POST,PUT,DELETE'; 
-
-
-const allowedHeaders = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'; // Add more headers as needed
-
-
-const corsOptions = {
-  origin: allowedOrigin,
-  methods: allowedMethods,
-  allowedHeaders: allowedHeaders,
-};
-
-app.use(cor(corsOptions));
+app.use(cor(
+  {
+    origin:["https://hostel-mangement-with-mern-stack-frontend.vercel.app"],
+    methods:["post","get"],
+    credentials:true
+  }
+))
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
