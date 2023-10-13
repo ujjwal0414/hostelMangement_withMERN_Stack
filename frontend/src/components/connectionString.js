@@ -1,1 +1,1 @@
-module.export=`mongodb+srv://ujjwalguptacdmat22:ujjwalmongodb14@cluster0.wl4vtog.mongodb.net/`;
+module.export=`mongodb+srv://ujjwalguptacdmat22:@cluster0.wl4vtog.mongodb.net/`;
