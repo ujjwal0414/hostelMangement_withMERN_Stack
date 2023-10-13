@@ -11,7 +11,7 @@ const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
 
-app.use(cors({ origin: 'https://hostel-mangement-with-mern-stack-frontend.vercel.app' }));
+app.use(cors({ origin: "https://hostel-mangement-with-mern-stack-frontend.vercel.app" }));
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
