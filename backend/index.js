@@ -13,8 +13,8 @@ const problemSolverMail=require("./problemSolverMail");
 app.use(cor(
   {
     origin:["https://hostel-mangement-with-mern-stack-frontend.vercel.app"],
-    methods:["post","get"],
-    credentials:true
+    methods:["post","get"]
+    
   }
 ))
 app.get("/",(req,resp)=>{
