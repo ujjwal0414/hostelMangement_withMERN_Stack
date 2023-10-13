@@ -13,7 +13,7 @@ const Complains=()=>{
     let usersname=userInfo.name;
     let userEmailId=userInfo.email;
     let fetchAllcomplains=async ()=>{
-        response =await fetch(`${localConnection}/fetchComplains/${usersname}/${userEmailId}`);
+        response =await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/fetchComplains/${usersname}/${userEmailId}`);
         response=await response.json();
         setResponses(response);
     }
@@ -22,14 +22,14 @@ const Complains=()=>{
        
     },[])
 let deleteComplain=async (description)=>{
-     let response=await fetch(`${localConnection}/deleteComplain/${usersname}/${userEmailId}/${description}`,{
+     let response=await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/deleteComplain/${usersname}/${userEmailId}/${description}`,{
         method:"delete"
      })
      response=await response.json();
      fetchAllcomplains();
 }
 let fetchRatings=async()=>{
-      ratingResponse=await fetch(`${localConnection}/messRatings/${usersname}/${userEmailId}`);
+      ratingResponse=await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/messRatings/${usersname}/${userEmailId}`);
       ratingResponse=await ratingResponse.json();
       setRatingResponse(ratingResponse);
 
