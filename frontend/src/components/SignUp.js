@@ -21,7 +21,7 @@ const SignUp=()=>{
        }
        else{
         
-        result= await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/signup`,{
+        result= await fetch(`https://hostel-mangement-with-mern-stack-frontend.vercel.app/signup`,{
             method:"post",
             body:JSON.stringify({
                 username:userName,
