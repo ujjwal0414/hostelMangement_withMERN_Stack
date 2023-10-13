@@ -11,7 +11,22 @@ const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
 
-app.use(cors({ origin: "https://hostel-mangement-with-mern-stack-frontend.vercel.app" }));
+const allowedOrigin = 'https://hostel-mangement-with-mern-stack-frontend.vercel.app';
+
+
+const allowedMethods = 'GET,POST,PUT,DELETE'; 
+
+
+const allowedHeaders = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'; // Add more headers as needed
+
+
+const corsOptions = {
+  origin: allowedOrigin,
+  methods: allowedMethods,
+  allowedHeaders: allowedHeaders,
+};
+
+app.use(cor(corsOptions));
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
