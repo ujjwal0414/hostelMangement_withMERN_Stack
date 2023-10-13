@@ -19,6 +19,9 @@ app.use(cors({ origin: 'https://hostel-mangement-with-mern-stack-frontend.vercel
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
+
+app.options('/login', cor());
+
 app.post("/signup", async (req,resp)=>{
       let data=new user(req.body);
       let response=await data.save();
