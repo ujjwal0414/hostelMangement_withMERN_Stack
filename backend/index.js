@@ -10,7 +10,11 @@ let subj="<h3>Dear User</h3><br><h3>Being a responsible student you have the res
 const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
-app.use(cor());
+app.use(cor(
+    origin: 'https://hostel-mangement-with-mern-stack.vercel.app/', 
+  methods: ["GET","POST"], 
+  credentials: true, 
+));
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
