@@ -11,8 +11,8 @@ const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
 app.use(cor(
-    origin: 'https://hostel-mangement-with-mern-stack.vercel.app', 
-  methods:["get","put","post","delete"], 
+    origin: 'https://hostel-mangement-with-mern-stack-frontend.vercel.app', 
+  methods:["GET","PUT","POST","DELETE"], 
   credentials: true, 
 ));
 app.get("/",(req,resp)=>{
