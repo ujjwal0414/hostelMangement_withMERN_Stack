@@ -33,10 +33,13 @@ app.post("/signup", async (req,resp)=>{
 });
 app.post("/login", async (req,resp)=>{
     let searched_data=await user.findOne(req.body);
+ 
     if(searched_data){
+       resp.header("Access-Control-Allow-Origin","https://hostel-mangement-with-mern-stack-frontend.vercel.app");
         resp.send({result:true,email:searched_data.email})
     }
     else{
+       resp.header("Access-Control-Allow-Origin","https://hostel-mangement-with-mern-stack-frontend.vercel.app");
         resp.send({result:false});
     }
 });
