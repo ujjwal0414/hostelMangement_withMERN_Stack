@@ -1,2 +1,2 @@
 const mongoose=require("mongoose");
-mongoose.connect("mongodb+srv://ujjwalguptacdmat22:ujjwalmongodb14@cluster0.wl4vtog.mongodb.net/Hostel_Management");
+mongoose.connect("mongodb+srv://ujjwalguptacdmat22:ujjwalmongodb14@cluster0.wl4vtog.mongodb.net/Hostel_Management?retryWrites=true&w=majority");
