@@ -4,7 +4,7 @@ require("./db/config");
 const mailer=require("./sendmail");
 let user=require("./db/user")
 app.use(express.json());
-const cor=require("cors");
+const cors=require("cors");
 const problem=require("./db/userproblems");
 let subj="<h3>Dear User</h3><br><h3>Being a responsible student you have the responsibilty of improving the beautiful campus and improving the facilities provided by it and you have the full right to complain against any services you find inconvenient , so lets move forward and create a change .</h3>"
 const problemAcceptanceMail=require("./problemAcceptancsMail");
@@ -12,7 +12,7 @@ const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
 
 
-app.use(cor());
+app.use(cors());
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
@@ -31,11 +31,11 @@ app.post("/login", async (req,resp)=>{
     let searched_data=await user.findOne(req.body);
  
     if(searched_data){
-       resp.header("Access-Control-Allow-Origin","https://hostel-mangement-with-mern-stack-frontend.vercel.app");
+      
         resp.send({result:true,email:searched_data.email})
     }
     else{
-       resp.header("Access-Control-Allow-Origin","https://hostel-mangement-with-mern-stack-frontend.vercel.app");
+     
         resp.send({result:false});
     }
 });
