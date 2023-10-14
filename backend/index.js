@@ -10,13 +10,20 @@ let subj="<h3>Dear User</h3><br><h3>Being a responsible student you have the res
 const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
+
+app.use((req,resp,next)=>{
+    resp.setHeader("Access-Control-Allow-Origin","*");
+    resp.setHeader("Access-Control-Allow-Methods","GET,PUT,POST,DELETE");
+    resp.setHeader("Access-Control-Allow-Header","Origin,X-Requested-With,Content-Type,Accept,Authorization");
+    next();
+});
 app.use(cor(
   {
     origin:["https://hostel-mangement-with-mern-stack-frontend.vercel.app"],
-    methods:["post","get"]
+    methods:["POST","POST"]
     
   }
-))
+));
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
