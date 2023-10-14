@@ -28,7 +28,7 @@ app.post("/signup", async (req,resp)=>{
       }
 });
 app.post("/login", async (req,resp)=>{
-    resp.setHeader("Access-Control-Allow-Origin","https://hostel-mangement-with-mern-stack-frontend.vercel.app");
+   
     let searched_data=await user.findOne(req.body);
  
     if(searched_data){
