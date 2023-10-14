@@ -99,9 +99,11 @@
         grid-row-gap: 10vw; */
         grid-template-columns: 90vw;
         grid-column-gap: 6vw;
+        grid-row-gap:10vw;
         justify-content: center;
     }
     .CardDiv{
+        margin-top:6vw;
         border: 1.5px solid black;
         width: 90vw;
         background-color: rgb(255, 255, 255);
