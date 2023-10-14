@@ -31,7 +31,7 @@ const ForgotPassword=()=>{
     }
     else{
        setMatch(true);
-       response=await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/changePassword/${usersname}/${userEmailId}`,{
+       response=await fetch(`${localConnection}/changePassword/${usersname}/${userEmailId}`,{
 
         method:"put",
         body:JSON.stringify({password:confirmPass}),
