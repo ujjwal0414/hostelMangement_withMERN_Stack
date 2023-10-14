@@ -17,7 +17,7 @@ let Login=()=>{
             setStatus(true);
          }
          else{
-            let response=await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/login`,{
+            let response=await fetch(`${localConnection}/login`,{
                 method:"POST",
                 body:JSON.stringify({
                     username:userName,
