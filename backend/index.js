@@ -21,13 +21,7 @@ response.status(200).send();
 
     next();
 });
-app.use(cor(
-  {
-    origin:["https://hostel-mangement-with-mern-stack-frontend.vercel.app"],
-    methods:["POST","POST"]
-    
-  }
-));
+app.use(cor());
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
 })
