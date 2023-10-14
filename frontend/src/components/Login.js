@@ -31,6 +31,7 @@ let Login=()=>{
               if(response.result){
                 setLogin(false);
                localStorage.setItem("stduser",JSON.stringify({name:userName,email:response.email}));
+            localStorage.setItem("forgotUser",JSON.stringify({name:userName,email:response.email}));
 
               
                 navigate("/");
