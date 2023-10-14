@@ -42,7 +42,7 @@ const ComplainForm=()=>{
         }
         else{
             setSubmissionResponse(true);
-            response =await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/postproblem`,{
+            response =await fetch(`${localConnection}/postproblem`,{
                 method:"post",
                 body:JSON.stringify({
                     username:usersname,
