@@ -11,16 +11,7 @@ const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
 
-app.use((req,response,next)=>{
-    response.set('Access-Control-Allow-Origin', 'https://hostel-mangement-with-mern-stack-frontend.vercel.app');
-response.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-response.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-response.set('Access-Control-Allow-Credentials', 'true');
-response.set('Access-Control-Max-Age', '36000');
-response.status(200).send();
 
-    next();
-});
 app.use(cor());
 app.get("/",(req,resp)=>{
     resp.send("Launching api");
