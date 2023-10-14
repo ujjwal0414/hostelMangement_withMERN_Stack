@@ -18,7 +18,7 @@ let Login=()=>{
          }
          else{
             let response=await fetch(`https://hostel-mangement-with-mern-stack-api.vercel.app/login`,{
-                method:"post",
+                method:"POST",
                 body:JSON.stringify({
                     username:userName,
                     password:pass
