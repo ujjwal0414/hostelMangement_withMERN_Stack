@@ -11,10 +11,14 @@ const problemAcceptanceMail=require("./problemAcceptancsMail");
 const messRating=require("./db/messRating");
 const problemSolverMail=require("./problemSolverMail");
 
-app.use((req,resp,next)=>{
-    resp.setHeader("Access-Control-Allow-Origin","*");
-    resp.setHeader("Access-Control-Allow-Methods","GET,PUT,POST,DELETE");
-    resp.setHeader("Access-Control-Allow-Header","Origin,X-Requested-With,Content-Type,Accept,Authorization");
+app.use((req,response,next)=>{
+    response.set('Access-Control-Allow-Origin', 'https://hostel-mangement-with-mern-stack-frontend.vercel.app');
+response.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+response.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+response.set('Access-Control-Allow-Credentials', 'true');
+response.set('Access-Control-Max-Age', '36000');
+response.status(200).send();
+
     next();
 });
 app.use(cor(
