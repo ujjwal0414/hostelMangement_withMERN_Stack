@@ -24,7 +24,7 @@ const LaunchPage=()=>{
                 </div>
                 <div className={cls.cardsContainer}>
                 <div className={cls.CardDiv}><div className={cls.imageHolder}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXlu35C_h7-1evZ2Xm8syVoT-8xwKltov0yBOHm07P5QyeKfh6OUCf9B5iqyw0Om4s7U&usqp=CAU" alt="pix"/></div>
-                <div className={cls.ratefoodDesc}>Very few likes Mess food but do we have an option , No? Therefore its our responsibilty too that we assure what we eat is well prepared for us.If you want torate services Here we are!</div>
+                <div className={cls.ratefoodDesc}>Very few individuals like the mess food and the reason may be any.It can be due to hygiene issue,bad taste,quality of raw materials used and many.But we can't rely on the the food delivery apps always,Rather we are responsibl for what is being served to us and complain if any issues found. </div>
                 <div className={cls.rateBtn}>
                     <button onClick={redirectToRateMess}>Rate Now !</button>
                 </div>
@@ -32,7 +32,7 @@ const LaunchPage=()=>{
                 
                 <div className={cls.CardDiv}><div className={cls.imageHolder}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt1Ab7eeB_5nDD35waXoG7MpjDjpYCacrKFg&usqp=CAU" alt="pix"/></div>
                 
-                <div className={cls.ratefoodDesc}>As a student major population resides in hostels and where they have to manage with daily unforseen/unexpected circumstances and it might be possible that they are not able to report at the current moment or do not want to disclose identity .But with our assistance they can surely get help!</div>
+                <div className={cls.ratefoodDesc}>As a student major population resides in hostels and where they have to manage with daily unforseen ,unexpected circumstances and it might be possible that they are not able to report at the current moment or do not want to disclose identity .But with our assistance they can surely get help!</div>
                 <div className={cls.rateBtn}>
                     <button onClick={redirectToComplainForm}>Complain</button>
                 </div>
