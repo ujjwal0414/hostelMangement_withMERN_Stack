@@ -32,7 +32,7 @@ const LaunchPage=()=>{
                 
                 <div className={cls.CardDiv}><div className={cls.imageHolder}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt1Ab7eeB_5nDD35waXoG7MpjDjpYCacrKFg&usqp=CAU" alt="pix"/></div>
                 
-                <div className={cls.ratefoodDesc}>Being a student majority people lives in hostels and where they have to manage with daily inforseend circumstances and it might be poossible that they are not able to report physically .Here they can do so!</div>
+                <div className={cls.ratefoodDesc}>As a student major population resides in hostels and where they have to manage with daily unforseen/unexpected circumstances and it might be possible that they are not able to report at the current moment or do not want to disclose identity .But with our assistance they can surely get help!</div>
                 <div className={cls.rateBtn}>
                     <button onClick={redirectToComplainForm}>Complain</button>
                 </div>
