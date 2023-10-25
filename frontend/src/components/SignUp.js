@@ -63,7 +63,7 @@ const SignUp=()=>{
             <div className={cls.whiteDivs}>
                 <span onClick={()=>{setNotification(false)}} className={cls.cross}>&#x2716;</span>
                 <div>Dear user,</div>
-                <div>Its a humble request to use your institute mail to sign up so that you receive all notification on the respective mail ID .Hope you like our services</div>
+                <div>Use your personal Gmail account so that you are notified more about our services for smooth experience of our services.Ant further recommendations are welcomed.(Currently this website is being improved and new features are yet to be added .Sorry for all inconvenience if any)</div>
             </div></>:<></>}
            <NavBar></NavBar>
            <div className={cls.signUpContainerMainDiv}>
