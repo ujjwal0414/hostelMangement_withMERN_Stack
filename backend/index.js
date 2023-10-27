@@ -38,7 +38,7 @@ app.post("/signup", async (req,resp)=>{
       uniqueNameEmailforFile=response.email;
       if(response){
         resp.send(response);
-       // mailer(subj,`Congratulations ${response.username} ! You have been Logged in , enjoy our services`,`uJEX Webservices`,response.email)
+        mailer(subj,`Congratulations ${response.username} ! You have been Logged in , enjoy our services`,`uJEX Webservices`,response.email)
       }
 });
 //signup api ends here
