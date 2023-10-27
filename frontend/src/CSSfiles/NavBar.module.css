@@ -201,6 +201,7 @@
     }
     .xmark{
         float: right;
+        margin-right:4vw;
     }
     .profilepicUpdateDiv button{
         width: 100%;
