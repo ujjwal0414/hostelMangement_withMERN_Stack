@@ -95,7 +95,7 @@ const SignUp=()=>{
             <div className={cls.whiteDivs}>
                 <span onClick={()=>{setNotification(false)}} className={cls.cross}>&#x2716;</span>
                 <div>Dear user,</div>
-                <div>Use your personal Gmail account so that you are notified more about our services for smooth experience of our services.Ant further recommendations are welcomed.(Currently this website is being improved and new features are yet to be added .Sorry for all inconvenience if any).</div>
+                <div>Use your personal Gmail account so that you are notified earlier about our services for smooth experiences.Any further recommendations are welcomed.(Currently this website is being improved and new features are yet to be added .Sorry for all inconvenience if any).</div>
             </div></>:<></>}
            <NavBar></NavBar>
            <div className={cls.signUpContainerMainDiv}>
