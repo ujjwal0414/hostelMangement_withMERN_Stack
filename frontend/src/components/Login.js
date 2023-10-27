@@ -36,7 +36,7 @@ let Login=()=>{
                 navigate("/");
               }
               else{
-  alert("Sorry unable to locate your data , Try again!!");
+  alert("Sorry unable to locate your data Either open this page in new tab or  Try again!!");
 
                 setLogin(true);
                 
