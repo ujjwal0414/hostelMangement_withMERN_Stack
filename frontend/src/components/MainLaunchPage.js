@@ -4,6 +4,7 @@ import cls from "../CSSfiles/LaunchPage.module.css"
 import { Footer } from "./Footer";
 import { useNavigate } from "react-router-dom";
 const LaunchPage=()=>{
+    
     let navigate=useNavigate();
     let redirectToRateMess=()=>{
         navigate("/ratemessfood");
@@ -19,8 +20,8 @@ const LaunchPage=()=>{
             <div className={cls.launcherMainDiv}>
                 <div className={cls.descriptionDiv}>
                     <p>Dear User,</p>
-                    <p>This website has been created keeping in mind the various issues a student faces during their day to day life or their stay in the campus .</p>
-                    <p>This web service helps to lodge complains againt the indivdual or any hostel or academic related problems or any authority here chossing their identity as they want .</p>
+                    <p>This website has been created keeping in mind the various issues a student faces during their stay in Campus .</p>
+                    <p>This web service helps to lodge complainsa againt the indivdual or any hostel or academic related propblems here by being anonymous</p>
                 </div>
                 <div className={cls.cardsContainer}>
                 <div className={cls.CardDiv}><div className={cls.imageHolder}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXlu35C_h7-1evZ2Xm8syVoT-8xwKltov0yBOHm07P5QyeKfh6OUCf9B5iqyw0Om4s7U&usqp=CAU" alt="pix"/></div>
