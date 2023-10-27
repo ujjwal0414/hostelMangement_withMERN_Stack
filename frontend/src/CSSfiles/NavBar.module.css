@@ -62,6 +62,7 @@
     cursor: pointer;
 }
 .userProfileDiv{
+    z-index:10;
     position: absolute;
     width: 34vw;
     min-height: 3vw;
