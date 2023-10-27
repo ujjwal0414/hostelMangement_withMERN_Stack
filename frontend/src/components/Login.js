@@ -18,7 +18,7 @@ let Login=()=>{
          }
          else{
             let response=await fetch(`${localConnection}/login`,{
-                method:"POST",
+                method:"post",
                 body:JSON.stringify({
                     username:userName,
                     password:pass
@@ -30,9 +30,8 @@ let Login=()=>{
               response=await response.json();
               if(response.result){
                 setLogin(false);
-               localStorage.setItem("stduser",JSON.stringify({name:userName,email:response.email}));
-            localStorage.setItem("forgotUser",JSON.stringify({name:userName,email:response.email}));
-
+               localStorage.setItem("stduser",JSON.stringify({name:userName,email:response.email,branch:response.branch,year:response.year,fileName:response.filePic}));
+              localStorage.setItem("forgotUser",JSON.stringify({name:userName,email:response.email}));
               
                 navigate("/");
               }
