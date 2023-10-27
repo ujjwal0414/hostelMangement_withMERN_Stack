@@ -73,7 +73,7 @@ const SignUp=()=>{
         }
         else{
             alert("Please select a valid format of image");
-            window.open("http://localhost:3000/signup");
+            window.open(`${localConnection}/signup`);
         }
         
        
