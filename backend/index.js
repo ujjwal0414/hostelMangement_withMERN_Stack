@@ -81,10 +81,11 @@ app.post("/uploadProfilePic/:userName/:userEmail",upload.single("file"),async (r
 //login api
 app.post("/login", async (req,resp)=>{
     let searched_data=await user.findOne(req.body);
-    let profileSearch=await userProf.findOne({
+    
+    if(searched_data ){
+        let profileSearch=await userProf.findOne({
         userNameprofile:searched_data.username,
         userEmailprofile:searched_data.email});
-    if(searched_data ){
         resp.send({result:true,name:searched_data.username,email:searched_data.email,filePic:profileSearch.UserfileName,branch:searched_data.branch,year:searched_data.yearofstudy});
      }
     else{
