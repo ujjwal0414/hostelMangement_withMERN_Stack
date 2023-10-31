@@ -43,7 +43,7 @@ const LaunchPage=()=>{
                 {/*component for chat app */}
                 <div className={cls.CardDiv}><div className={cls.imageHolder}><img src="https://thinkthyme.com/wp-content/uploads/2017/12/10-Group-Chat-Tools-for-Small-Companies.jpg" alt="pix"/></div>
                 
-                <div className={cls.ratefoodDesc}>Join the community where you will be updated with many upcomingevents ,where you will be avle to post your queries and get actionable answers from your batchmates . Not only getiing updated but current updates or ongoing campus chores which might help you to cintibute your skills to the part which might be missing !.</div>
+                <div className={cls.ratefoodDesc}>Join the community where you will be updated with many upcomin gevents ,where you will be able to post your queries and get actionable answers from your batchmates . Not only getiing updated but current updates on ongoing campus chores which might help you to contribute your skills to the part which might be missing !.</div>
                 <div className={cls.rateBtn}>
                     <button>Join Community</button>
                 </div>
