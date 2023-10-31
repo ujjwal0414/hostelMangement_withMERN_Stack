@@ -20,8 +20,8 @@ const LaunchPage=()=>{
             <div className={cls.launcherMainDiv}>
                 <div className={cls.descriptionDiv}>
                     <p>Dear User,</p>
-                    <p>This website has been created keeping in mind the various issues a student faces during their college life .</p>
-                    <p>This web service helps to lodge complains againt any indivdual or any hostel / academic related propblems wehter if they want to be anonymous or revealing their identity. Their identity will be confidential to us .</p>
+                    <p>This website has been created keeping in mind the various issues a student faces during their stay in Campus .</p>
+                    <p>This web service helps to lodge complainsa againt the indivdual or any hostel or academic related propblems here by being anonymous</p>
                 </div>
                 <div className={cls.cardsContainer}>
                 <div className={cls.CardDiv}><div className={cls.imageHolder}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXlu35C_h7-1evZ2Xm8syVoT-8xwKltov0yBOHm07P5QyeKfh6OUCf9B5iqyw0Om4s7U&usqp=CAU" alt="pix"/></div>
@@ -38,7 +38,22 @@ const LaunchPage=()=>{
                     <button onClick={redirectToComplainForm}>Complain</button>
                 </div>
                 </div>
+                
+
+                {/*component for chat app */}
+                <div className={cls.CardDiv}><div className={cls.imageHolder}><img src="https://thinkthyme.com/wp-content/uploads/2017/12/10-Group-Chat-Tools-for-Small-Companies.jpg" alt="pix"/></div>
+                
+                <div className={cls.ratefoodDesc}>Join the community where you will be updated with many upcomingevents ,where you will be avle to post your queries and get actionable answers from your batchmates . Not only getiing updated but current updates or ongoing campus chores which might help you to cintibute your skills to the part which might be missing !.</div>
+                <div className={cls.rateBtn}>
+                    <button>Join Community</button>
                 </div>
+                </div>
+                {/*chata app component ends here */}
+
+
+                
+                </div>
+             
             </div>
             <Footer></Footer>
         </div>
