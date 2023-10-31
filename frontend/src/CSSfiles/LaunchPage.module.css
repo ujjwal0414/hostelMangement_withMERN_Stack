@@ -1,7 +1,7 @@
-@media(min-width:450px){
++@media(min-width:450px){
     .launcherMainDiv{
         
-        background-color: rgb(240, 237, 237);
+        background-color: rgb(255, 255, 255);
         min-height: 95vh;
     }
     .descriptionDiv{
@@ -84,13 +84,13 @@
     .launcherMainDiv
     {
         display: grid;
-               background-color: rgb(240, 237, 237);
+               background-color: rgb(255, 255, 255);
        
         padding-bottom: 5vw;
-        grid-template-rows: 20vh 50vh 50vh ;
+        grid-template-rows: 20vh;
         grid-row-gap: 5vw;
         justify-content: center;
-        margin-bottom: 30vw;
+       
     }
     .cardsContainer{
         margin-top: 7vh; 
@@ -99,15 +99,15 @@
         grid-row-gap: 10vw; */
         grid-template-columns: 90vw;
         grid-column-gap: 6vw;
-        grid-row-gap:10vw;
         justify-content: center;
     }
     .CardDiv{
-        margin-top:6vw;
         border: 1.5px solid black;
         width: 90vw;
         background-color: rgb(255, 255, 255);
         padding-bottom: 4vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
     }
     .imageHolder{
         width:90vw ;
