@@ -74,7 +74,7 @@ const RateFood=()=>{
         let userName=userDetails.name;
         let userEmail=userDetails.email;
 
-    if(rates===0 && messNumberOrLetter==="" && hostelName===""){
+    if(rates===0 || messNumberOrLetter==="" || hostelName===""){
 
         setMessNosStatus(true);
         return false;
