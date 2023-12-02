@@ -71,7 +71,7 @@ const Community=()=>{
                                     
                                     <div className={cls.userNameInfo}>userName</div>
                                 </div>
-                                <p className={cls.UserPersonalMess}>Hello user</p>
+                                <p className={cls.UserPersonalMess}>Hey there ! This page is still under development mode and stil some implementations are to be made ,sorry for any incoveniences hope to deploy in production mode soon :-)</p>
                                 <p className={cls.timingSent}>11:45</p>
                             </div>
                             
@@ -84,7 +84,7 @@ const Community=()=>{
                                     <div className={cls.otherUserName}>userName</div>
                                 </div>
                                 <p className={cls.OthersUserMess}>
-                                    Hey other user
+                                    Other chats goes here...
                                 </p>
                                 <p className={cls.otherUserTiming}>11:45</p>
                             </div>
