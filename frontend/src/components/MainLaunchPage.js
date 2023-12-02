@@ -45,7 +45,7 @@ const LaunchPage=()=>{
                 
                 <div className={cls.ratefoodDesc}>Join the community where you will be updated with many upcoming events ,where you will be able to post your queries and get actionable answers from your batchmates . Not only getiing updated but current updates on ongoing campus chores which might help you to contribute your skills to the part which might be missing !.</div>
                 <div className={cls.rateBtn}>
-                    <button>Join Community</button>
+                    <button onClick={()=>{navigate("/community")}}>Join Community</button>
                 </div>
                 </div>
                 {/*chata app component ends here */}
