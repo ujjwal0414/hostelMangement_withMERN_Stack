@@ -9,6 +9,8 @@ import { RateFood } from './components/RateMessFood';
 import { Complains } from './components/allComplains';
 import { ComplainForm } from './components/ComplainForm';
 import { ForgotPassword } from './components/ForgotPassword';
+import { Community } from './components/community';
+
 function App() {
   
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path='/' element={<LaunchPage></LaunchPage>}></Route>
         <Route path='/complainform' element={<ComplainForm></ComplainForm>}></Route>
         <Route path='/complains' element={<Complains></Complains>}></Route>
+         <Route path='/community' element={<Community></Community>}></Route>
 
         </Route>
        
