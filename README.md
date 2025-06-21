@@ -17,8 +17,8 @@ Ever faced the problem to rate your mess instantly or lodge a complain being ano
 - MongoDB
 
 ## 📸 Screenshots
-
-(Add some screenshots of key pages or features)
+![Image](https://github.com/user-attachments/assets/b890c13f-01c6-49cc-8bfa-32c26c5fa50b)
+![Image](https://github.com/user-attachments/assets/7ec7a50f-af79-4b43-9485-7c91803cc3f9)
 
 ## 🧰 Installation
 
